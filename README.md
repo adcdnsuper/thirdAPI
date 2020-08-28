@@ -19,9 +19,9 @@ class Utils
         'alg'=>;'HS256', //生成signature的算法
         'typ'=>;'JWT'    //类型
     );
-
+    private static $salt = 'xxxx'//开发者盐值	
      //使用HMAC生成信息摘要时所使用的密钥
-    private static $key='THIRD_PARY_TOKEN';
+    private static $key='THIRD_PARY_TOKEN'.self::salt;
     public static function getJwtToken($payload)
     {
         if(is_array($payload))
