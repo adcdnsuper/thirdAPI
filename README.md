@@ -3,7 +3,7 @@
 
 
 ```
-&lt;?php
+<?php
 /**
  * @desc Utils
  * @Author lyt 395078304@qq.com
@@ -16,8 +16,8 @@ class Utils
 {
     //jwt头部
     private static $header=array(
-        'alg'=&gt;'HS256', //生成signature的算法
-        'typ'=&gt;'JWT'    //类型
+        'alg'=>;'HS256', //生成signature的算法
+        'typ'=>;'JWT'    //类型
     );
 
 
