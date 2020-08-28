@@ -159,13 +159,13 @@ function curl($url,$data){
 
 $url = 'https://api.game.box.apiadcdn.com/gv1/thirdParty/ExchangeRatio';
 $params = array(
-    &quot;appId&quot;=&gt;&quot;600002&quot;,
-    &quot;timeStamp&quot;=&gt;time(),
+    'appId'=>600002;,
+    'timeStamp'=>time(),
 );
 $token = Utils::getJwtToken($params);
 $data = array(
-    'salt'=&gt;'bCL5IB',
-    'token'=&gt;$token
+    'salt'=>'bCL5IB',
+    'token'=>$token
 );
 curl($url,$data);
 ```
