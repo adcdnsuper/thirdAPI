@@ -74,7 +74,7 @@ class Utils
     private static function signature($input, $key, $alg = 'HS256')
     {
         $alg_config=array(
-            'HS256'=&gt;'sha256'
+            'HS256'=>'sha256'
         );
         return self::base64UrlEncode(hash_hmac($alg_config[$alg], $input, $key,true));
     }
@@ -132,7 +132,7 @@ func ParseToken(token,salt string)(string,error){
 6. 当前云币与RMB的兑换比例PHP代码示例：
 
 ```
-require &quot;Utils.php&quot;;
+require 'Utils.php';
 function curl($url,$data){
     $ch = curl_init();
     curl_setopt($ch, CURLOPT_URL, $url);
