@@ -197,7 +197,7 @@ curl($url,$data);
   "APIDATA": [
     {
       "gold": "206770", //云币金额
-      "user_id": "57257" //用户id
+      "userId": "57257" //用户id
     }
   ],
   "APIDEC": "ok",
