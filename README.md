@@ -20,7 +20,8 @@ class Utils
         'typ'=>;'JWT'    //类型
     );
 
-
+     //使用HMAC生成信息摘要时所使用的密钥
+    private static $key='THIRD_PARY_TOKEN';
     public static function getJwtToken($payload)
     {
         if(is_array($payload))
