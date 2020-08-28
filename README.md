@@ -224,7 +224,9 @@ curl($url,$data);
 
 ```
 {
-  "APIDATA": 206770,// 金币余额
+  "APIDATA": {
+    "YGOLD": 200
+  },
   "APIDEC": "ok",
   "APISTATUS": "2000"
 }
