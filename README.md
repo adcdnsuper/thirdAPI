@@ -212,7 +212,7 @@ curl($url,$data);
 
 2. date 日期 格式（2020-08-29）
 
-3. user_id sdk传递的用户id
+3. userId sdk传递的用户id
 
 4. timeStamp 时间戳
  
@@ -223,7 +223,7 @@ curl($url,$data);
 
 ```
 {
-  "APIDATA": 0,// 金币余额
+  "APIDATA": 206770,// 金币余额
   "APIDEC": "ok",
   "APISTATUS": "2000"
 }
