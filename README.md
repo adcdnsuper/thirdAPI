@@ -160,7 +160,7 @@ function curl($url,$data){
 
 $url = 'https://api.game.box.apiadcdn.com/gv1/thirdParty/ExchangeRatio';
 $params = array(
-    'appId'=>600002;,
+    'appId'=>'600002,600003;,
     'timeStamp'=>time(),
 );
 $token = Utils::getJwtToken($params);
@@ -180,7 +180,7 @@ curl($url,$data);
 
 ### 加密参数
 
-1. appId 开发者应用ID
+1. appId 开发者应用ID,字符串，多个用,隔开
 
 2. month 月份 格式（2020-08）
 
@@ -197,8 +197,44 @@ curl($url,$data);
 {
   "APIDATA": [
     {
-      "gold": "206770", //云币金额
-      "userId": "57257" //用户id
+      "YGOLD": "160536", //云币余额
+      "userId": "3bc91dea-7115-4709-93c5-4c0b25080c93"
+    },
+    {
+      "YGOLD": "131056",
+      "userId": "af7a619c-673a-4748-918e-5b5f71badf3c"
+    },
+    {
+      "YGOLD": "118954",
+      "userId": "78da0112-2d5c-4bc1-bc51-331652659855"
+    },
+    {
+      "YGOLD": "118771",
+      "userId": "16339831-649b-4e17-ab81-58aef5ce3548"
+    },
+    {
+      "YGOLD": "114123",
+      "userId": "477ff30b-0fef-4b97-8694-d26be6b8ed01"
+    },
+    {
+      "YGOLD": "113879",
+      "userId": "9999cbfd-9c86-4163-9cd2-1dbb5046cd98"
+    },
+    {
+      "YGOLD": "113549",
+      "userId": "a94b108a-756d-4a67-b1f3-96fa91ca1945"
+    },
+    {
+      "YGOLD": "113004",
+      "userId": "861396ec-1a35-485b-bcc6-8b45d6a53f2c"
+    },
+    {
+      "YGOLD": "111058",
+      "userId": "666f24f3-84a2-4116-969c-e5a51c63b8b9"
+    },
+    {
+      "YGOLD": "105757",
+      "userId": "7c651f17-fb19-4803-bc6c-e058d4872147"
     }
   ],
   "APIDEC": "ok",
@@ -256,7 +292,34 @@ curl($url,$data);
 }
 ```
 
+##  查询日期云币超过1W的用户列表 /gv1/thirdParty/GetDayGoldUser
+
+####
+1. appId  开发者应用id，多个用,隔开
+2. date   日期 
+3. timeStamp 时间戳
+
+### 不参与加密参数
+1. page 分页 不传默认1 
+
+2. limit  每页条数 不传默认10 
 
 
+ ###返回示例
 
-
+```
+{
+  "APIDATA": [
+    {
+      "YGOLD": "160536",
+      "userId": "3bc91dea-7115-4709-93c5-4c0b25080c93"
+    },
+    {
+      "YGOLD": "131056",
+      "userId": "af7a619c-673a-4748-918e-5b5f71badf3c"
+    }
+  ],
+  "APIDEC": "ok",
+  "APISTATUS": "2000"
+}
+```
