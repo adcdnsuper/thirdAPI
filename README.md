@@ -195,50 +195,35 @@ curl($url,$data);
 
 ```
 {
-  "APIDATA": [
-    {
-      "YGOLD": "160536", //云币余额
-      "userId": "3bc91dea-7115-4709-93c5-4c0b25080c93"
-    },
-    {
-      "YGOLD": "131056",
-      "userId": "af7a619c-673a-4748-918e-5b5f71badf3c"
-    },
-    {
-      "YGOLD": "118954",
-      "userId": "78da0112-2d5c-4bc1-bc51-331652659855"
-    },
-    {
-      "YGOLD": "118771",
-      "userId": "16339831-649b-4e17-ab81-58aef5ce3548"
-    },
-    {
-      "YGOLD": "114123",
-      "userId": "477ff30b-0fef-4b97-8694-d26be6b8ed01"
-    },
-    {
-      "YGOLD": "113879",
-      "userId": "9999cbfd-9c86-4163-9cd2-1dbb5046cd98"
-    },
-    {
-      "YGOLD": "113549",
-      "userId": "a94b108a-756d-4a67-b1f3-96fa91ca1945"
-    },
-    {
-      "YGOLD": "113004",
-      "userId": "861396ec-1a35-485b-bcc6-8b45d6a53f2c"
-    },
-    {
-      "YGOLD": "111058",
-      "userId": "666f24f3-84a2-4116-969c-e5a51c63b8b9"
-    },
-    {
-      "YGOLD": "105757",
-      "userId": "7c651f17-fb19-4803-bc6c-e058d4872147"
-    }
-  ],
-  "APIDEC": "ok",
-  "APISTATUS": "2000"
+    "APIDATA": [
+        {
+            "YGOLD": "360536",
+            "month": "2020-08",
+            "userId": "3bc91dea-7115-4709-93c5-4c0b25080c93"
+        },
+        {
+            "YGOLD": "328056",
+            "month": "2020-08",
+            "userId": "af7a619c-673a-4748-918e-5b5f71badf3c"
+        },
+        {
+            "YGOLD": "318771",
+            "month": "2020-08",
+            "userId": "16339831-649b-4e17-ab81-58aef5ce3548"
+        },
+        {
+            "YGOLD": "313549",
+            "month": "2020-08",
+            "userId": "a94b108a-756d-4a67-b1f3-96fa91ca1945"
+        },
+        {
+            "YGOLD": "313004",
+            "month": "2020-08",
+            "userId": "861396ec-1a35-485b-bcc6-8b45d6a53f2c"
+        }
+    ],
+    "APIDEC": "ok",
+    "APISTATUS": "2000"
 }
 ```
 
