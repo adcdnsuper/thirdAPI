@@ -197,9 +197,9 @@ curl($url,$data);
 {
     "APIDATA": [
         {
-            "YGOLD": "360536",
-            "month": "2020-08",
-            "userId": "3bc91dea-7115-4709-93c5-4c0b25080c93"
+            "YGOLD": "360536",//云币
+            "month": "2020-08",月份
+            "userId": "3bc91dea-7115-4709-93c5-4c0b25080c93"//用户ID
         },
         {
             "YGOLD": "328056",
